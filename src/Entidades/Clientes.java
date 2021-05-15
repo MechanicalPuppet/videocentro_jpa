@@ -57,10 +57,11 @@ public class Clientes implements Serializable {
         this.numCredencial = numCredencial;
     }
 
-    public Clientes(String numCredencial, String nombre, String direccion) {
+    public Clientes(String numCredencial, String nombre, String direccion, String telefono) {
         this.numCredencial = numCredencial;
         this.nombre = nombre;
         this.direccion = direccion;
+        this.telefono = telefono;
     }
 
     public String getNumCredencial() {

@@ -7,7 +7,7 @@
         <class>Entidades.Inventariovideojuegos</class>
         <class>Entidades.Videojuegos</class>
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/videocentro?serverTimezone=UTC&useSSL=false"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/videocentro?serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.password" value="sesamo"/>
