@@ -40,8 +40,8 @@ public class RentasvideojuegosJpaController implements Serializable {
         if (rentasvideojuegos.getRentasvideojuegosPK() == null) {
             rentasvideojuegos.setRentasvideojuegosPK(new RentasvideojuegosPK());
         }
-        rentasvideojuegos.getRentasvideojuegosPK().setNumCatalogo(rentasvideojuegos.getVideojuegos().getNumCatalogo());
         rentasvideojuegos.getRentasvideojuegosPK().setNumCredencial(rentasvideojuegos.getClientes().getNumCredencial());
+        rentasvideojuegos.getRentasvideojuegosPK().setNumCatalogo(rentasvideojuegos.getVideojuegos().getNumCatalogo());
         EntityManager em = null;
         try {
             em = getEntityManager();
@@ -79,8 +79,8 @@ public class RentasvideojuegosJpaController implements Serializable {
     }
 
     public void edit(Rentasvideojuegos rentasvideojuegos) throws NonexistentEntityException, Exception {
-        rentasvideojuegos.getRentasvideojuegosPK().setNumCatalogo(rentasvideojuegos.getVideojuegos().getNumCatalogo());
         rentasvideojuegos.getRentasvideojuegosPK().setNumCredencial(rentasvideojuegos.getClientes().getNumCredencial());
+        rentasvideojuegos.getRentasvideojuegosPK().setNumCatalogo(rentasvideojuegos.getVideojuegos().getNumCatalogo());
         EntityManager em = null;
         try {
             em = getEntityManager();

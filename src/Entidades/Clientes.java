@@ -34,6 +34,10 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Clientes.findByTelefono", query = "SELECT c FROM Clientes c WHERE c.telefono = :telefono")})
 public class Clientes implements Serializable {
 
+    @Basic(optional = false)
+    @Column(name = "numeroTarjeta")
+    private String numeroTarjeta;
+
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -128,6 +132,14 @@ public class Clientes implements Serializable {
     @Override
     public String toString() {
         return "Entidades.Clientes[ numCredencial=" + numCredencial + " ]";
+    }
+
+    public String getNumeroTarjeta() {
+        return numeroTarjeta;
+    }
+
+    public void setNumeroTarjeta(String numeroTarjeta) {
+        this.numeroTarjeta = numeroTarjeta;
     }
     
 }
