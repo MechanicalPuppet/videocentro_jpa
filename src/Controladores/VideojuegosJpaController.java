@@ -86,7 +86,10 @@ public class VideojuegosJpaController implements Serializable {
                 em.close();
             }
         }
+      
     }
+
+
 
     public void edit(Videojuegos videojuegos) throws IllegalOrphanException, NonexistentEntityException, Exception {
         EntityManager em = null;
@@ -250,4 +253,8 @@ public class VideojuegosJpaController implements Serializable {
         }
     }
     
+    public void closeFactory(){
+        emf.close();
+    }
+
 }
