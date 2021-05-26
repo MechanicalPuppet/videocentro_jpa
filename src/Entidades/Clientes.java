@@ -68,6 +68,16 @@ public class Clientes implements Serializable {
         this.telefono = telefono;
     }
 
+    public Clientes(String numeroTarjeta, String numCredencial, String nombre, String direccion, String telefono) {
+        this.numeroTarjeta = numeroTarjeta;
+        this.numCredencial = numCredencial;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+    }
+    
+    
+
     public String getNumCredencial() {
         return numCredencial;
     }
